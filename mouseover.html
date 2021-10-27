@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body id="body">
+    <h1>Evento "onMouseOver"</h1>
+    <hr>
+    <p>Uso del evento "onMouseOver" para cambiar el color de fondo moviendo el ratón sobre la imagen</p>
+    
+    <div id="blanco" style="height:15px; width:15px; background-color: white; display: inline-block;"></div>
+    &nbsp;&nbsp;
+    <div id="rojo" style="height:15px; width:15px; background-color: red; display: inline-block;"></div>
+    &nbsp;&nbsp;
+    <div id="amarillo" style="height:15px; width:15px; background-color: yellow; display: inline-block;"></div>
+    &nbsp;&nbsp;
+    <div id="verde" style="height:15px; width:15px; background-color: green; display: inline-block;"></div>
+    &nbsp;&nbsp;
+    <div id="azul" style="height:15px; width:15px; background-color: blue; display: inline-block;"></div>
+    
+    <p>This example uses the HTML DOM to assign an "onmouseover" and "onmouseout" event to a h1 element.</p>
+
+<h1 id="demo">Mouse over me</h1>
+
+<script>
+    document.getElementById("blanco").addEventListener("mouseover",b,false);
+    function b(){
+        document.getElementById("body").style.background = "white";
+    }
+    document.getElementById("rojo").addEventListener("mouseover",c,false);
+    function c(){
+        document.getElementById("body").style.background = "red";
+    }
+    document.getElementById("amarillo").addEventListener("mouseover",a,false);
+    function a(){
+        document.getElementById("body").style.background = "yellow";
+    }
+    document.getElementById("verde").addEventListener("mouseover",v,false);
+    function v(){
+        document.getElementById("body").style.background = "green";
+    }
+    document.getElementById("azul").addEventListener("mouseover",z,false);
+    function z(){
+        document.getElementById("body").style.background = "blue";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--te pide momnbre, 2 numeros
+     devuelve 
+    saludo en pantalla / consola / popup
+    suma/resta/multi/divi en pantalla-->
+
+    <script>
+        let nombre, a, b, salida;
+
+        nombre = window.prompt("Introduce tu nombre");
+        a = window.prompt("Introduce el primer numero");
+        b = window.prompt("Introduce el segundo numero");
+
+        salida = `Hola que tal estás ${nombre} </br>`;
+
+        document.write(salida);
+        console.log(salida);
+        alert(salida);
+
+        a1 = parseInt(a);
+        b1 = parseInt(b);
+        document.write(`La suma de los 2 numeros es ${a1+b1}<br>`);
+        document.write(`La resta de los 2 numeros es ${a1-b1}<br>`);
+        document.write(`La multiplicacion de los 2 numeros es ${a1*b1}<br>`);
+        document.write(`La division de los 2 numeros es ${a1/b1}<br>`);
+    </script>
+</body>
+</html>

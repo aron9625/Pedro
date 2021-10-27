@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let palabra = "periscopio";
+
+        alert(palabra.length);
+        let respuesta;
+        for(let i = 0; i < palabra.length; i++){
+            document.writeln(palabra.substring(i) + "<br>");
+
+        }
+
+/*
+     let meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+     let dias = [31,28,31,30,31,30,31,31,30,31,30,31] ;
+
+     for(let i=0; i < dias.length; i++){
+         document.write(`${meses[i]} tiene ${dias[i]} días </br>`);
+     }
+
+*/
+/*
+
+let capital;
+let count = 1;
+do{
+    capital = window.prompt("¿Cuál es la capital de Finlandia?");
+    capital = capital.trim();
+    capital = capital.toLowerCase();
+    
+    if(capital == "helsinki"){
+            document.write("<h2>Es correcto la respuesta</h2>");
+        }else if(count <= 2){
+             alert("Introduce otra vez");
+             alert(`Llevas ${count} intentos`);
+             
+        }else if(count == 3){
+                document.write("<h2>Se te acabaron los 3 intentos</h2>");
+        }   
+        count++; 
+}while(capital != "helsinki" && count <= 3);
+
+*/
+/*
+        let capFin = window.prompt("¿Cuál es la capital de Finlandia?");
+
+        capFin = capFin.trim();
+        capFin = capFin.toLowerCase();
+        
+        if(capFin == "helsinki"){
+            document.write("<h2>Es correcto la respuesta</h2>");
+        }else{
+            let pais;
+            do{
+                pais = window.prompt("INTRODUCE OTRA VEZ");
+            }while(pais != "helsinki");
+            document.write("Lo has conseguido");   
+            
+        }
+*/
+    </script>
+</body>
+</html>

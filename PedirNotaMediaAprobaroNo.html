@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+        let a, b, c;
+
+        a = parseInt(window.prompt("Ingrese la primera nota:"));
+        b = parseInt(window.prompt("Ingrese la segunda nota:"));
+        c = parseInt(window.prompt("Ingrese la tercera nota:"));
+
+        document.write(`La 1º nota: ${a}`);
+        document.write(`La 2º nota: ${b}`);
+        document.write(`La 3º nota: ${b}`);
+        document.getElementById("cambiar").addEventListener("click",f,false);
+         function f(){
+        var atrapar = document.getElementsByTagName("span")[0];
+        if((a+b+c)/3 >= 5){
+        atrapar.innerHTML = "HAS APROBADO";
+         }else{
+            atrapar.innerHTML = "HAS SUSPENDIDO";
+         }
+
+    </script>
+    <button type="submit" id="cambiar">¿Has aprobado?</button>
+</body>
+</html>

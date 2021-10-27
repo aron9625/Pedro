@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello, world</title>
+    </head>
+    <body>
+        <h1 >Hello, world</h1>
+
+        <button type="submit" id="enviar">Enviar</button>
+        <script>
+            document.getElementById("enviar").addEventListener("click",f,false);
+    
+function f(){
+    var hola = document.getElementsByTagName("h1")[0];
+    hola.innerHTML="estoy cambiando el texto";
+}
+        </script>
+        
+    </body>
+</html>

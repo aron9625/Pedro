@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Manejando Array's...</h1>
+    <p>Introduce un texto:</p>
+    <textarea id="text" cols="20" rows="5"></textarea>
+    <br>
+    <button id="boton">Púlsame</button>
+    <script>
+        document.getElementById("boton").addEventListener("click",f,false);
+        function f(){
+            let text = document.getElementById("text").value;
+            let str = text.split(" ");
+            let vent = window.open("","","width=400 height=300");
+            vent.document.title = "Arrays";
+            
+            vent.document.body.innerHTML="<center><h3>Transformación sobre el texto introducido...:</h3><br>número de palabras: <b>"+str.length+"</b><br>primera palabra: <b>"+str[0]+"</b><br>ultima palabra: <b>"+str[str.length-1]+"</b><br>colocadas al revés:<br><b>"+str.reverse().join('..')+"</b><br>ordenados de la 'a' a la 'z': <br><b>"+str.sort().join('..')+"</b><br>ordenadas de la 'z' a la 'a': <br><b>"+str.reverse().join('..')+"</b><br><br><b>...Hecho</b></center>";
+            
+        }
+    </script>
+</body>
+</html>

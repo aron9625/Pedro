@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div id="col">ola</div>
+    <div id="ro">hola</div>
+    <script>
+        
+        document.getElementById("html").addEventListener("click",a,true);
+        function a(){
+           
+            console.log("html");
+        }
+
+        document.getElementById("body").addEventListener("click",b,true);
+        function b(){
+            
+            console.log("body");
+        }
+        
+        document.getElementById("ro").addEventListener("click",f,true);
+        function f(){
+            alert("hola");
+            
+            console.log("div");
+        }
+
+        document.getElementById("col").addEventListener("click",h,true);
+        function h(){
+            let body = document.getElementById("body");
+            let div = document.createElement("div");
+            div.innerHTML = "nuevo";
+            body.appendChild(div);
+        }
+    </script>
+</body>
+</html>

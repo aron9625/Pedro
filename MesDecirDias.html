@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let mes, dias;
+        mes = window.prompt("Introduce el mes: ");
+        mes = mes.trim();
+        mes = mes.toLowerCase();
+        switch(mes){
+            case 'enero','marzo','julio','agosto','octubre','diciembre' : 
+                    document.write("Tiene 31 días este mes");
+            case 'abril', 'junio', 'septiembre', 'noviembre' :
+                    document.write("Tiene 30 días este mes");
+            case 'febrero' :
+                    document.write("Tiene 28 días este mes");
+            default :
+                document.write("No se ha reconocido este mes");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css"> 
+        body{
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+            width: 70%;
+        }
+        .form input{
+            width: 90%;
+            height: 30px;
+            margin: 0.5rem 0;
+            
+        }
+        .form button{
+            padding: 0.5rem 1em;
+            border: none;
+            background: blue;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form class="form">
+        <label>Nombre:</label><br>
+        <!--<input type="text" id="text" onfocus="entrar()" onblur="salir()"><br>--!/>
+        <div id="d1"></div><br>
+        <label>Email:</label><br>
+        <input type="email" id="mail"><br>
+        <div id="d2"></div><br>
+        <label>Contraseña:</label><br>
+        <input type="password" id="pass"><br>
+        <div id="d3"></div><br>
+        <label>Confirmar Contraseña:</label><br>
+        <input type="password" id="pass2"><br>
+        <div id="d4"></div><br><br>
+        <button type="button" value="SIGN UP" id="añadir">ENVIAR</button>
+    </form>
+    <script>
+        function entrar(){
+            document.getElementById("text").style.background = "yellow";
+           
+        }
+        function salir(){
+            document.getElementById("text").style.background = "red";
+        }
+        document.getElementById("añadir").addEventListener("click",f,false);
+        function f(){
+            let text = document.getElementById("text").value;
+            let div1 = document.getElementById("d1");
+            let div2 = document.getElementById("d2");
+            let div3 = document.getElementById("d3");
+            let div4 = document.getElementById("d4");
+
+            let regexmail = /fdsfsdf/;
+            
+            let email = document.getElementById("mail").value;
+            let pass = document.getElementById("pass").value;
+            let pass2 = document.getElementById("pass2").value;
+
+            if(text == "" || email == "" || pass == "" || pass2 == ""){
+                div1.innerHTML = "Debes introducir algun valor";
+                div2.innerHTML = "Debes introducir algun valor";
+                div3.innerHTML = "Debes introducir algun valor";
+                div4.innerHTML = "Debes introducir algun valor";
+            }else if(text.length < 3 || text.length > 25){
+
+                div1.innerHTML = "Username must be between 3 and 25 characters";
+            }
+            
+           
+        }
+    </script>
+</body>
+</html>

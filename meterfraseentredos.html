@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    hola que tal<br>
+
+    miau<br>
+    <span></span>
+    <br>
+    guau<br>
+
+    <button type="submit" id="cambiar">Cambiar</button>
+
+    <script>
+         document.getElementById("cambiar").addEventListener("click",f,false);
+         function f(){
+        var atrapar = document.getElementsByTagName("span")[0];
+        atrapar.innerHTML = "el año que viene tendrás 24 años";
+         }
+
+    </script>
+</body>
+</html>

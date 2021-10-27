@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="i1"> 
+    <button type="submit" id="añadir">Enviar Mnesaje</button><br>
+    <textarea id="t1"></textarea>
+
+    <script>
+        document.getElementById("añadir").addEventListener("click",f,false);
+        function f(){
+            let input = document.getElementById("i1").value;
+            let text = document.getElementById("t1");
+            input = input.replace(/tonto/ig, '****');
+            text.innerHTML += 'hola\nque tal\n'+input+'\n';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Hola Mundo</title>
+</head>
+<body>
+
+    <script>
+        document.writeln("Hola mundo </br>");
+        document.writeln("Adios mundo <br>");
+
+        let a,b;
+
+        a=10; b=5;
+        resultado = a+b;
+
+        document.write(`la variable a contiene ${a} <br>`);
+        document.write(`la variable b contiene ${b} <br>`);
+        document.write(`el resultado de a*b es ${a*b} <br>`);
+
+        alert(`La suma de a+b es ${resultado}`);
+         let nombre,salida;
+
+        nombre = window.prompt("Introduce tu nombre");
+        salida = `Hola, que tal estás ${nombre} <br>`;
+
+        document.write(salida);
+        let edad;
+        edad = parseInt(window.prompt("Introduce tu edad"));
+        //num = parseInt(edad);
+        salida = `tienes ${edad} años`;
+        edad = edad+1;
+        nextyear = `El año que viene tendrás ${edad} años`;
+
+        document.write(nextyear);
+
+    </script>
+</body>
+</html>
