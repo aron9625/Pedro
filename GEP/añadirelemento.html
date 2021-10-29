@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <ul id="hola">   
+         
+    </ul>
+
+    <input type="radio" name="grupo" value="arriba" id="up" checked>Arriba<br><br>
+    <input type="radio" name="grupo" value="abajo" id="down">Abajo<br><br>
+
+    <button type="submit" id="añadir">Añadir elemento</button><br><br>
+    <input type="text" id="texto" >
+    <script>
+    alert(document.getElementsByTagName("li")[0]);
+    document.getElementById("añadir").addEventListener("click",f,false);
+    function f(){
+        let texto = document.getElementById("texto");
+        let text = texto.value;
+        let li = document.createElement("li");
+        li.innerText = text;
+        let captar =  document.getElementById("hola");
+        if (document.getElementById("up").checked) {
+            captar.insertBefore(li, document.getElementsByTagName("li")[0]);
+            
+        }else if(document.getElementById("down").checked){
+            captar.appendChild(li);
+        }
+
+        /*
+        let dame = window.prompt("Ingrese un nuevo elemento a la lista");
+        let captar =  document.getElementById("hola");
+        let li = document.createElement("li");
+        captar.appendChild(li);
+        li.innerHTML = dame;
+        let arriba = document.getElementById("up");
+        let texto = document.getElementById("text");
+        if (arriba.checked) {
+            let captar =  document.getElementById("hola");
+            let li = document.createElement("li");
+            captar.insertBefore(li);
+            li.innerHTML = dame;     
+        }
+        */
+    }
+
+/*
+    document.getElementById("añadir").addEventListener("click",f,false);
+    function f(){
+       
+        let input = document.getElementsByTagName("body");
+
+        let  p = document.getElementsByName("solo");
+        let p1 = window.prompt("Ingrese el nuevo input radio: ");
+        p.setAttribute("value", p1);  
+    }
+*/
+    </script>
+    
+   
+</body>
+</html>
